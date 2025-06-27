@@ -17,9 +17,9 @@ export default function Home() {
   return (
     <>
     <Navbar />
-      <div className="">
-        <h1 className="heading py-5">E-Commerce Website</h1>
-          <div className="row g-5">
+      <div className="container">
+        {/* <h1 className="heading my-5">E-Commerce Website</h1> */}
+          <div className="row g-5 mt-5">
             {/* <div className="col-lg-4 col-md-6 col-sm-12"> */}
             {products.map(product => (
             <div key={product.id} className = "col-lg-4 col-md-6 col-sm-12" id="col-responsive">

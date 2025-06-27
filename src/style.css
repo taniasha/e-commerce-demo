@@ -30,3 +30,14 @@ table tr{
   margin:0;
   padding:0;
 }
+ h3{
+   color:rgb(19, 150, 150);
+   text-decoration: 1px black underline;
+ }
+ h1{
+  color:rgb(119, 119, 216);
+  text-align: center;
+  margin:40px;
+  font-weight: 900;
+  
+ }

@@ -3,7 +3,7 @@ import { NavLink, Link } from 'react-router-dom';
 
 export default function Navbar() {
   return (
-    <div>
+    <div className='container'>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand fs-1 fw-bold" href="#">Lashy</a>
