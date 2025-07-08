@@ -2,6 +2,7 @@ import React, {useEffect, useState, useContext} from "react";
 import Navbar from "./Navbar";
 import "./style.css";
 import { CartContext } from './CartContext';
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const { addToCart } = useContext(CartContext);
@@ -25,12 +26,13 @@ export default function Home() {
             <div key={product.id} className = "col-lg-4 col-md-6 col-sm-12" id="col-responsive">
             
               <div className="card">
-                <img src={product.image} class="card-img-top" alt="Product-image" height="200px" />
+                <img src={product.image} class="card-img-top" alt="Product-image" width="200px" />
                 <div class="card-body">
                   <h5 class="card-title">{product.title}</h5>
-                  <p class="card-text truncate-3">{product.description}</p>
+                  {/* <p class="card-text truncate-3">{product.description}</p> */}
                   <p className="card-price fw-bold">Rs. {product.price}</p>
                   <button onClick={() => addToCart(product)}>Add to Cart</button>
+                  <button ><Link to={`/details/${product.id}`}>View Details</Link></button>
                 </div>
               </div>
             </div>

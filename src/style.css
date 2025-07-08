@@ -1,6 +1,9 @@
 
 .card{
   width:18rem;
+  border: none;
+  border-radius: 30%;
+  margin-top:90px;
 }
 
 .card-text.truncate-3 {
@@ -39,5 +42,12 @@ table tr{
   text-align: center;
   margin:40px;
   font-weight: 900;
+  
+ }
+ button{
+  margin:20px;
+  padding:10px;
+  border:none;
+  background-color: beige;
   
  }
